@@ -1,143 +1,76 @@
-<!DOCTYPE html>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
- <script>
-$(document).ready(function () {
-    $('.results > li').hide();
-
-    $('div.tags').find('input:checkbox').live('click', function () {
-        $('.results > li').hide();
-        $('div.tags').find('input:checked').each(function () {
-            $('.results > li.' + $(this).attr('rel')).show();
-        });
-    });
-});  
- </script>
-
+<html>
+<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
 
 <style>
-ul
-{
-list-style-type: none;
+body {
+ margin: 0px;
+ }
+
+input[type="checkbox"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 17%;
 }
 
 .fotboll {
-width: 400px;
-height: 200px;
-padding: 10px;
-border: 5px;
-border-style: solid;
-border-color: #FCC000;
-background-color: #FCC000;
-margin: 10px; 
-display: block;
-
+    content: url('Fotboll-Non.png');
 }
-
-
+.fotboll:checked {
+    content: url('Fotboll-Act.png');
+}
 .hockey {
-width: 400px;
-height: 200px;
-padding: 10px;
-border: 5px;
-border-style: solid;
-border-color: #00DFCC;
-background-color: #00DFCC;
-margin: 10px; 
-display: block;
+    content: url('Hockey-Non.png');
+}
+.hockey:checked {
+    content: url('Hockey-Act.png');
+}
+.vinter {
+    content: url('Vinter-Non.png');
+}
+.vinter:checked {
+    content: url('Vinter-Act.png');
+}
+.handboll {
+    content: url('Handboll-Non.png');
+}
+.handboll:checked {
+    content: url('Handboll-Act.png');
+}
+.mma {
+    content: url('Mma-Non.png');
+}
+.mma:checked {
+    content: url('Mma-Act.png');
+}
+
+
+.native-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
 }
 
-.basket{
-width: 400px;
-height: 200px;
-padding: 10px;
-border: 5px;
-border-style: solid;
-border-color: #FF3230;
-background-color: #FF3230;
-margin: 10px; 
-display: block;
 
-}
-
-body{
-    color: white;
-    }
-
-h1{
-    color: black;
-    }
-h2{
-    color: white;
-    }
-title{
-    color: black;
-    }
-label{
-    color: black;
-    }
 </style>
+<input class="native-hidden fotboll" type="checkbox" rel="fotboll"/>
+<input class="native-hidden hockey" type="checkbox" rel="hockey"/>
+<input class="native-hidden vinter" type="checkbox" rel="vinter"/>
+<input class="native-hidden handboll" type="checkbox" rel="handboll"/>
+<input class="native-hidden mma" type="checkbox" rel="mma"/>
+<a href="http://www.vecka.nu/">Vidare</a>
+ <script>
+ $('input').click(function() {
+ 	var currentHref = $("a").attr("href");
+
+ 	var rel = $(this).attr("rel");
+
+	$("a").attr("href", currentHref + "#" + rel) 	
 
 
-<html>
-<center>
-    <head>
-  <title>SPORT-Expressen</title>
-    </head>
+	alert(window.location.hash.split(','))
 
-<body>
-<h1>SPORT-Expressen</h1>
-<div class="tags">
-<label>
-    <input type="checkbox" rel="fotboll">
-        Fotboll
-    </input>
-</label>
-<label>
-    <input type="checkbox" rel="hockey">
-        Hockey
-    </input>
-</label>
-<label>
-    <input type="checkbox" rel="basket">
-        Basket
-    </input>
-</label>
-</div>
-
-</center>
- <ul class="results">
-    <li class="hockey">
-        <h2>Röd Natt</h2>
-        <p>Tre Kronor smäller i Ryssland</p>
-    </li> 
-
-    <li class="fotboll">
-        <h2>Zlatan gör mål</h2>
-        <p>Zlatan har gjor det igen.</p>
-    </li>
-
-
-    <li class="basket">
-        <h2>Space Jam</h2>
-        <p>Michael Jordan ska med till Mars</p>
-    </li>
-
-    <li class="fotboll">
-        <h2>Zlatan är GUD</h2>
-        <p>Ännu en spektakulär klack mål från vår Zlatan.</p>
-    </li>
-        
-    <li class="fotboll">
-        <h2>Vroom vroom</h2>
-        <p>Zlatan köper två bilar</p>
-    </li>
-        
-    <li class="fotboll hockey">
-        <h2>Zlatan ska börja med Hockey</h2>
-        <p>Ska till New York Rangers 2040</p>
-    </li>
-    </ul>
-</body>
+ });
+</script>
 </html>
