@@ -52,6 +52,40 @@ input[type="checkbox"] {
 
 }
 
+.wrap{
+ width: 100%;
+ height: 10%px;
+ float: left;
+ display: block;    
+ margin: 0px;    
+}
+
+.box{
+ width: 50%;
+ height: 12%;
+ display: block;
+ font-weight:  bold;
+ text-align: center;
+  vertical-align:middle;
+}
+
+.left{
+    float: left;
+    background: white;
+
+}
+
+.right{
+float: right;
+        background: #48A0DC;
+}
+
+space {
+display: block;
+width: 100%
+height 4%;
+background: white;
+}
 
 </style>
 <input class="native-hidden fotboll" type="checkbox" rel="fotboll"/>
@@ -59,7 +93,22 @@ input[type="checkbox"] {
 <input class="native-hidden vinter" type="checkbox" rel="vinter"/>
 <input class="native-hidden handboll" type="checkbox" rel="handboll"/>
 <input class="native-hidden mma" type="checkbox" rel="mma"/>
-<a href="http://www.vecka.nu/">Vidare</a>
+
+<div class="pagination">
+  <div data-tooltip="Tooltip 1" class="pagination__dot pagination__dot--active"></div>
+  <div data-tooltip="Tooltip 2" class="pagination__dot"></div>
+  <div data-tooltip="Tooltip 3" class="pagination__dot"></div>
+  <div data-tooltip="Tooltip 4" class="pagination__dot"></div>
+  <div data-tooltip="Tooltip 5" class="pagination__dot"></div>
+
+</div>
+
+<div class="wrap">
+<div class="box left"></div>
+<div class="box right"><a href="http://www.vecka.nu/">Vidare</a>
+</div>
+</div>
+
  <script>
  $('input').click(function() {
  	var currentHref = $("a").attr("href");
