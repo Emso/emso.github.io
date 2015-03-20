@@ -133,6 +133,8 @@ input[type=checkbox].css-checkbox {
 				-ms-user-select: none;
 				user-select: none;
 			}
+			
+/*  KLASSEN FÖR FILTER BILDERNA  */
 
 .fotboll {
     content: url('Fotboll-Non.png');
@@ -148,7 +150,7 @@ input[type=checkbox].css-checkbox {
     
 }
 
-.fotboll-mer {
+.fotboll-filter {
     width: 100%;
     height: 100%;
     margin-bottom: -7px;
@@ -445,6 +447,122 @@ position: relative;
     margin-left: inherit;
 }
 
+/* HERE STARTS MMA FILTER */
+
+.ufc {
+    content: url('mma/Ufc-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+
+}
+.ufc:checked {
+    content: url('mma/Ufc-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+}
+.bellator {
+    content: url('mma/Bellator-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+	margin-left: inherit;    
+}
+.bellator:checked {
+    content: url('mma/Bellator-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.wsof {
+    content: url('mma/Wsof-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+	margin-left: auto;
+}
+.wsof:checked {
+    content: url('mma/Wsof-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+}
+.one {
+    content: url('mma/One-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.one:checked {
+    content: url('mma/One-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.invicta {
+    content: url('mma/Invicta-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+	margin-left: auto;
+}
+.invicta:checked {
+    content: url('mma/Invicta-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+}
+.mfc {
+    content: url('mma/Mfc-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.mfc:checked {
+    content: url('fotboll/MFC-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.legacy {
+    content: url('mma/Legacy-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+	margin-left: auto;
+}
+.legacy:checked {
+    content: url('mma/Legacy-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: auto;
+}
+.king {
+    content: url('mma/King-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: inherit;
+}
+.king:checked {
+    content: url('mma/King-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: inherit;
+}
+
 
 </style>
 
@@ -456,62 +574,68 @@ position: relative;
 <center>
 <body>
 
+<!-- FÖRSTA FILTRENINGS FASEN-->
 <!--La till *.-mer css klasser för att fin filtrera vidare, bara fotboll är igång här under-->
 <div class="native-hidden tags" id="checkbutton">
-<input class="native-hidden fotboll tags" type="checkbox" rel="fotboll-mer"/>
-<input class="native-hidden hockey" type="checkbox" rel="hockey"/>
+<input class="native-hidden fotboll tags" type="checkbox" rel="fotboll-filter"/>
+<input class="native-hidden hockey" type="checkbox" rel="hockey-mer"/>
 <input class="native-hidden vinter" type="checkbox" rel="vinter"/>
 <input class="native-hidden handboll" type="checkbox" rel="handboll"/>
-<input class="native-hidden mma" type="checkbox" rel="mma"/>
+<input class="native-hidden mma" type="checkbox" rel="mma-filter"/>
 </div>
 
 
 
-<!--HÄR MÅSTE CHECKBOXES BYTAS TILL RUNDA, MEN HAR BYTT DE TILL BILDER FÖRUT SÅ JAG VET INTE HUR JAG SKA TA MIG TILL HÄR-->
+<!-- HÄR BÖRJAR FOTBOLLS FILTRERINGEN -->
 <div>
 <ul class="results">
-    <li class="fotboll-mer" >
+    <li class="fotboll-filter" >
     <div class="tags" id="checkbutton">
 
  <div style="margin-bottom: -10px;" align="center">  <img src="Fotboll-Non.png"/ height="17%" width="100%"> 
 </div> 
-<!--HÄR MÅSTE CHECKBOXES BYTAS TILL RUNDA, MEN HAR BYTT DE TILL BILDER FÖRUT SÅ JAG HAR FASTNAT HÄR. ANNRS SÅ FUNKAR CHECKBOXARNA OCH STYR ARTIKLRNA LÄNGRE NER, BYT BARA REL-->
+
+<!-- HÄR BÖRJAR KNAPPARNA FÖR FOTBOLL -->
 <!-- Champions and Europa -->
 <div class="section group">
 	<div class="col span_1_of_2">
-	<input class="native-hidden champions tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden champions tags" type="checkbox" rel="champions-div"/>
 	</div>
 	<div class="col span_2_of_2">
-	<input class="native-hidden europa tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden europa tags" type="checkbox" rel="europa-div"/>
 	</div>
 </div>
+
 <!-- Premier and La Liga -->
 <div class="section group">
 	<div class="col span_1_of_2">
-	<input class="native-hidden premier tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden premier tags" type="checkbox" rel="premier-div"/>
 	</div>
 	<div class="col span_1_of_2">
-	<input class="native-hidden laliga tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden laliga tags" type="checkbox" rel="laliga-div"/>
 	</div>
 </div>
+
 <!-- Serie A and Bundes -->
 <div class="section group">
 	<div class="col span_1_of_2">
-	<input class="native-hidden seriea tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden seriea tags" type="checkbox" rel="seriea-div"/>
 	</div>
 	<div class="col span_1_of_2">
-	<input class="native-hidden bundes tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden bundes tags" type="checkbox" rel="bundes-div"/>
 	</div>
 </div>
+
 <!-- Ligue 1 and Allsvenskan -->
 <div class="section group">
 	<div class="col span_1_of_2">
-	<input class="native-hidden ligue1 tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden ligue1 tags" type="checkbox" rel="ligue1-div"/>
 	</div>
 	<div class="col span_1_of_2">
-	<input class="native-hidden allsvenskan tags" type="checkbox" rel="fotboll-mer"/>
+	<input class="native-hidden allsvenskan tags" type="checkbox" rel="allsvenskan-div"/>
 	</div>
 </div>
+
 <!-- Back and Next -->
 <div class="section group">
 	<div class="col span_1_of_2">
@@ -523,80 +647,69 @@ position: relative;
 </div>
 
 
-<ul>
-	<li>
-<label>
-    <input type="checkbox" rel="all" checked>
-        <span>Alla</span>
-    </input>
-</label>
-</li>
-<li>
-<label>
-    <div class="roundedTwo">
-      <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
-      <label for="roundedTwo"></label>
-    </div>
-</label>
-</li>
-<label>
-<li>
-    <input type="checkbox" rel="championsleague-div">
-        <span>Champions League</span>
-    </input>
-</label>
-</li>
-<li>
-<label>
-    <input type="checkbox" rel="premiumleague-div">
-        <span>Premium League</span>
-    </input>
-</label>
-</li>
-</li>
-<label>
-    <input type="checkbox" rel="laliga-div">
-        <span>La Liga</span>
-    </input>
-</label>
-</li>
-<li>
-<label>
-    <input type="checkbox" rel="seriea-div">
-        <span>Serie A</span>
-    </input>
-</label>
-</li>
-<li>
-<label>
-    <input type="checkbox" rel="bundensliga-div">
-        <span>Bundens Liga</span>
-    </input>
-</label>
-</li>
-<li>
-<label>
-    <input type="checkbox" rel="ligue1-div">
-        <span>Ligue1</span>
-    </input>
-</label>
-</li>
-<li>
-<label>
-    <input type="checkbox" rel="allsvenskan-div">
-        <span>All Svenskan</span>
-    </input>
-</label>
-</li>
-</div>
-</div>
-   
-    </li>
-</ul>
+<!-- HÄR BÖRJAR MMA FILTRERINGEN -->
+<div>
+<ul class="results">
+    <li class="mma-filter" >
+    <div class="tags" id="checkbutton">
 
+ <div style="margin-bottom: -10px;" align="center">  <img src="Mma-Non.png"/ height="17%" width="100%"> 
+</div> 
 
+<!-- HÄR BÖRJAR KNAPPARNA FÖR FOTBOLL -->
+<!-- Champions and Europa -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<input class="native-hidden ufc tags" type="checkbox" rel="ufc-div"/>
+	</div>
+	<div class="col span_2_of_2">
+	<input class="native-hidden bellator tags" type="checkbox" rel="bellator-div"/>
+	</div>
+</div>
+
+<!-- Premier and La Liga -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<input class="native-hidden premier tags" type="checkbox" rel="premier-div"/>
+	</div>
+	<div class="col span_1_of_2">
+	<input class="native-hidden laliga tags" type="checkbox" rel="laliga-div"/>
+	</div>
+</div>
+
+<!-- Serie A and Bundes -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<input class="native-hidden seriea tags" type="checkbox" rel="seriea-div"/>
+	</div>
+	<div class="col span_1_of_2">
+	<input class="native-hidden bundes tags" type="checkbox" rel="bundes-div"/>
+	</div>
+</div>
+
+<!-- Ligue 1 and Allsvenskan -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<input class="native-hidden ligue1 tags" type="checkbox" rel="ligue1-div"/>
+	</div>
+	<div class="col span_1_of_2">
+	<input class="native-hidden allsvenskan tags" type="checkbox" rel="allsvenskan-div"/>
+	</div>
+</div>
+
+<!-- Back and Next -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<img src="Fotboll/backbutton.png" height="10%" width="100%">
+	</div>
+	<div class="col span_1_of_2">
+	<img src="Fotboll/nextbutton.png" height="10%" width="100%">	
+	</div>
+</div>
+
+<!-- HÄR KOMMER ARTIKLARNA FRAM -->
 <!--Här funkar checkboxarna med displayblock artiklarna, rör ej tills vi kommer hit.-->
-
+<!-- HÄR TAR VI PAUS
 <h1>SPORT-Expressen</h1>
 <div class="tags" id="checkbutton">
 <label>
@@ -621,7 +734,7 @@ position: relative;
 </label>
 </div>
 </center>
-
+-->
  <ul class="results">
     <li class="hockey-div all" position="center" >
         <h2>Röd Natt</h2>
@@ -644,7 +757,7 @@ position: relative;
         <p>Ännu en spektakulär klack mål från vår Zlatan.</p>
     </li>
         
-    <li class="fotboll-div all">
+    <li class="laliga-div all">
         <h2>Vroom vroom</h2>
         <p>Zlatan köper två bilar</p>
     </li>
