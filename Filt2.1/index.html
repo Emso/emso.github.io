@@ -56,7 +56,7 @@ box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 
 * {
     -webkit-padding-start: 0px;
-    -webkit-margin-after: 0px;
+    -webkit-margin-after: 20px;
 }
 
 .basket-div { /*Block for basket*/
@@ -102,6 +102,29 @@ p{ /*Changes the position of p*/
     margin-top: 100px;
     }
 
+/*
+input[type=checkbox] {
+    padding-left:0px;
+    padding-right:0px;
+    border-radius:50px;
+    -webkit-appearance:button;
+    border: double 2px #ccc;
+    background-color:white;
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+    width:100px;
+    height:100px;
+}
+
+input[type=checkbox]:checked {
+    background-color:#0366a0;
+    border-left-color:#ccc;
+    border-right-color:#ccc;
+}
+input[type=checkbox]:hover {
+
+}
 
 
 /*FIRST MENU*/
@@ -246,6 +269,35 @@ input[type=checkbox].css-checkbox {
 
 }
 
+
+.wrap{
+ width: 100%;
+ height: 10%px;
+ float: left;
+ display: block;    
+ margin: 0px;    
+}
+
+.box{
+ width: 50%;
+ height: 12%;
+ display: block;
+ font-weight:  bold;
+ text-align: center;
+  vertical-align:middle;
+}
+
+.left{
+    float: left;
+    background: white;
+
+}
+
+.right{
+float: right;
+        background: #48A0DC;
+}
+
 .block-div { /*Block for fotboll*/
 width: 90%;
 height: 300px;
@@ -262,129 +314,14 @@ box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 position: relative;
 
 }
-
-
+/*FIRST MENU ENDS*/
 .wrap{
  width: 100%;
- height: 10%;
+ height: 10%px;
  float: left;
  display: block;    
- margin: auto;    
+ margin: 0px;    
 }
-
-.box{
- width: 100%;
- height: 12%;
- display: block;
-
-}
-
-.left{
-    float: left;
-    background: white;
-
-}
-
-.right{
-	float: right;
-    background: #48A0DC;
-}
-
-
-
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	vertical-align: middle;
-}
-
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	border-width: 0px;
-	margin-bottom: -2px;
-	display: inline-block;
-	width: 100%;
-}
-.col:first-child { margin-left: 0;}
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF TWO  */
-.span_2_of_2 {
-	width: 50%;
-	height: 18%;
-}
-.span_1_of_2 {
-	width: 50%;
-	height: 18%;
-}
-
-
-/* HERE STARTS FOTBOLLS FILTER */
-
-.champions {
-    content: url('fotboll/Champions-Non.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-    margin-left: auto;
-}
-.champions:checked {
-    content: url('fotboll/Champions-Act.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-    margin-left: auto;
-}
-.europa {
-    content: url('fotboll/Europa-Non.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-    margin-right: auto;
-}
-.europa:checked {
-    content: url('fotboll/Europa-Act.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-}
-.premier {
-    content: url('fotboll/Premier-Non.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-    margin-right: 0px;
-}
-.premier:checked {
-    content: url('fotboll/Premier-Act.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-}
-.laliga {
-    content: url('fotboll/LaLiga-Non.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-    margin-left: 0px;
-}
-.laliga:checked {
-    content: url('fotboll/LaLiga-Act.png');
-    width: 100%;
-    height: 17%;
-    margin-bottom: -7px;
-}
-
 
 </style>
 
@@ -395,6 +332,7 @@ position: relative;
     </head>
 <center>
 <body>
+<h1>FIRST</h1>
 
 <!--La till *.-mer css klasser för att fin filtrera vidare, bara fotboll är igång här under-->
 <div class="native-hidden tags" id="checkbutton">
@@ -405,101 +343,56 @@ position: relative;
 <input class="native-hidden mma" type="checkbox" rel="mma"/>
 </div>
 
-
-
 <!--HÄR MÅSTE CHECKBOXES BYTAS TILL RUNDA, MEN HAR BYTT DE TILL BILDER FÖRUT SÅ JAG VET INTE HUR JAG SKA TA MIG TILL HÄR-->
 <div>
 <ul class="results">
     <li class="fotboll-mer" >
     <div class="tags" id="checkbutton">
 
- <div style="margin-bottom: -10px;" align="center">  <img src="Fotboll-Non.png"/ height="17%" width="100%"> 
-</div> 
+ <div>  <img src="Fotboll-Non.png"/ height="17%" width="100%"> 
+</div>
+
 <!--HÄR MÅSTE CHECKBOXES BYTAS TILL RUNDA, MEN HAR BYTT DE TILL BILDER FÖRUT SÅ JAG HAR FASTNAT HÄR. ANNRS SÅ FUNKAR CHECKBOXARNA OCH STYR ARTIKLRNA LÄNGRE NER, BYT BARA REL-->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden champions tags" type="checkbox" rel="fotboll-mer"/>
-	</div>
-	<div class="col span_2_of_2">
-	<input class="native-hidden europa tags" type="checkbox" rel="fotboll-mer"/>
-	</div>
-</div>
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden premier tags" type="checkbox" rel="fotboll-mer"/>
-	</div>
-	<div class="col span_1_of_2">
-	<input class="native-hidden laliga tags" type="checkbox" rel="fotboll-mer"/>
-	</div>
-</div>
-
-
-<ul>
-	<li>
 <label>
-    <input type="checkbox" rel="all" checked>
+    <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" rel="all">
         <span>Alla</span>
     </input>
 </label>
-</li>
-<li>
 <label>
-    <div class="roundedTwo">
-      <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
-      <label for="roundedTwo"></label>
-    </div>
-</label>
-</li>
-<label>
-<li>
     <input type="checkbox" rel="championsleague-div">
         <span>Champions League</span>
     </input>
 </label>
-</li>
-<li>
 <label>
     <input type="checkbox" rel="premiumleague-div">
         <span>Premium League</span>
     </input>
 </label>
-</li>
-</li>
 <label>
     <input type="checkbox" rel="laliga-div">
         <span>La Liga</span>
     </input>
 </label>
-</li>
-<li>
 <label>
     <input type="checkbox" rel="seriea-div">
         <span>Serie A</span>
     </input>
 </label>
-</li>
-<li>
 <label>
     <input type="checkbox" rel="bundensliga-div">
         <span>Bundens Liga</span>
     </input>
 </label>
-</li>
-<li>
 <label>
     <input type="checkbox" rel="ligue1-div">
         <span>Ligue1</span>
     </input>
 </label>
-</li>
-<li>
 <label>
     <input type="checkbox" rel="allsvenskan-div">
         <span>All Svenskan</span>
     </input>
 </label>
-</li>
-</div>
 </div>
    
     </li>

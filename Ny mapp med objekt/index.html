@@ -1,0 +1,112 @@
+<html>
+<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+
+<style>
+body {
+ margin: 0px;
+ }
+
+input[type="checkbox"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 17%;
+}
+
+.fotboll {
+    content: url('Fotboll-Non.png');
+}
+.fotboll:checked {
+    content: url('Fotboll-Act.png');
+}
+.hockey {
+    content: url('Hockey-Non.png');
+}
+.hockey:checked {
+    content: url('Hockey-Act.png');
+}
+.vinter {
+    content: url('Vinter-Non.png');
+}
+.vinter:checked {
+    content: url('Vinter-Act.png');
+}
+.handboll {
+    content: url('Handboll-Non.png');
+}
+.handboll:checked {
+    content: url('Handboll-Act.png');
+}
+.mma {
+    content: url('Mma-Non.png');
+}
+.mma:checked {
+    content: url('Mma-Act.png');
+}
+
+
+.native-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+}
+
+.wrap{
+ width: 100%;
+ height: 10%;
+ float: left;
+ display: block;    
+ margin: 0px;    
+}
+
+.box{
+ width: 50%;
+ height: 12%;
+ display: block;
+ font-weight:  bold;
+ text-align: center;
+  vertical-align:middle;
+}
+
+.left{
+    float: left;
+    background: white;
+
+}
+
+.right{
+float: right;
+        background: #48A0DC;
+}
+
+
+
+</style>
+<input class="native-hidden fotboll" type="checkbox" rel="fotboll"/>
+<input class="native-hidden hockey" type="checkbox" rel="hockey"/>
+<input class="native-hidden vinter" type="checkbox" rel="vinter"/>
+<input class="native-hidden handboll" type="checkbox" rel="handboll"/>
+<input class="native-hidden mma" type="checkbox" rel="mma"/>
+
+
+<div class="wrap">
+<div class="box left"></div>
+<div class="box right"><a href="http://www.vecka.nu/">Vidare</a>
+</div>
+</div>
+
+ <script>
+ $('input').click(function() {
+ 	var currentHref = $("a").attr("href");
+
+ 	var rel = $(this).attr("rel");
+
+	$("a").attr("href", currentHref + "#" + rel) 	
+
+$(this).attr('href').replace(/^.*?(#|$)/,'');
+	alert(window.location.hash.split(','))
+
+ });
+</script>
+</html>

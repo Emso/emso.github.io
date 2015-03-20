@@ -1,0 +1,19 @@
+{
+	"categories": ["fotboll", "hockey", "basket"],
+	"articles": [{
+		"title": "bla bla",
+		"introduction": "asdasd",
+		"category": "fotboll",
+		"body": "......"
+	}, {
+		"title": "bla bla",
+		"introduction": "asdasd",
+		"category": "fotboll",
+		"body": "......"
+	}, {
+		"title": "bla bla",
+		"introduction": "asdasd",
+		"category": "fotboll",
+		"body": "......"
+	}]
+}
