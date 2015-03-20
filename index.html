@@ -332,57 +332,117 @@ position: relative;
 /* HERE STARTS FOTBOLLS FILTER */
 
 .champions {
-    content: url('Champions-Non.png');
+    content: url('fotboll/Champions-Non.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
     margin-left: auto;
+
 }
 .champions:checked {
-    content: url('Champions-Act.png');
+    content: url('fotboll/Champions-Act.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
     margin-left: auto;
 }
 .europa {
-    content: url('Europa-Non.png');
+    content: url('fotboll/Europa-Non.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
-    margin-right: auto;
+    margin-bottom: -6px;
+	margin-left: inherit;    
 }
 .europa:checked {
-    content: url('Europa-Act.png');
+    content: url('fotboll/Europa-Act.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
+    margin-left: inherit;
 }
 .premier {
-    content: url('Premier-Non.png');
+    content: url('fotboll/Premier-Non.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
-    margin-right: 0px;
+    margin-bottom: -6px;
+	margin-left: auto;
 }
 .premier:checked {
-    content: url('Premier-Act.png');
+    content: url('fotboll/Premier-Act.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
+    margin-left: auto;
 }
 .laliga {
-    content: url('LaLiga-Non.png');
+    content: url('fotboll/LaLiga-Non.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
-    margin-left: 0px;
+    margin-bottom: -6px;
+    margin-left: inherit;
 }
 .laliga:checked {
-    content: url('LaLiga-Act.png');
+    content: url('fotboll/LaLiga-Act.png');
     width: 100%;
     height: 17%;
-    margin-bottom: -7px;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.seriea {
+    content: url('fotboll/Seriea-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+	margin-left: auto;
+}
+.seriea:checked {
+    content: url('fotboll/Seriea-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+}
+.bundes {
+    content: url('fotboll/Bundes-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.bundes:checked {
+    content: url('fotboll/Bundes-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+}
+.ligue1 {
+    content: url('fotboll/Ligue1-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+	margin-left: auto;
+}
+.ligue1:checked {
+    content: url('fotboll/Ligue1-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: auto;
+}
+.allsvenskan {
+    content: url('fotboll/Allsvenskan-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: inherit;
+}
+.allsvenskan:checked {
+    content: url('fotboll/Allsvenskan-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: inherit;
 }
 
 
@@ -416,6 +476,7 @@ position: relative;
  <div style="margin-bottom: -10px;" align="center">  <img src="Fotboll-Non.png"/ height="17%" width="100%"> 
 </div> 
 <!--HÄR MÅSTE CHECKBOXES BYTAS TILL RUNDA, MEN HAR BYTT DE TILL BILDER FÖRUT SÅ JAG HAR FASTNAT HÄR. ANNRS SÅ FUNKAR CHECKBOXARNA OCH STYR ARTIKLRNA LÄNGRE NER, BYT BARA REL-->
+<!-- Champions and Europa -->
 <div class="section group">
 	<div class="col span_1_of_2">
 	<input class="native-hidden champions tags" type="checkbox" rel="fotboll-mer"/>
@@ -424,12 +485,40 @@ position: relative;
 	<input class="native-hidden europa tags" type="checkbox" rel="fotboll-mer"/>
 	</div>
 </div>
+<!-- Premier and La Liga -->
 <div class="section group">
 	<div class="col span_1_of_2">
 	<input class="native-hidden premier tags" type="checkbox" rel="fotboll-mer"/>
 	</div>
 	<div class="col span_1_of_2">
 	<input class="native-hidden laliga tags" type="checkbox" rel="fotboll-mer"/>
+	</div>
+</div>
+<!-- Serie A and Bundes -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<input class="native-hidden seriea tags" type="checkbox" rel="fotboll-mer"/>
+	</div>
+	<div class="col span_1_of_2">
+	<input class="native-hidden bundes tags" type="checkbox" rel="fotboll-mer"/>
+	</div>
+</div>
+<!-- Ligue 1 and Allsvenskan -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<input class="native-hidden ligue1 tags" type="checkbox" rel="fotboll-mer"/>
+	</div>
+	<div class="col span_1_of_2">
+	<input class="native-hidden allsvenskan tags" type="checkbox" rel="fotboll-mer"/>
+	</div>
+</div>
+<!-- Back and Next -->
+<div class="section group">
+	<div class="col span_1_of_2">
+	<img src="Fotboll/backbutton.png" height="10%" width="100%">
+	</div>
+	<div class="col span_1_of_2">
+	<img src="Fotboll/nextbutton.png" height="10%" width="100%">	
 	</div>
 </div>
 
