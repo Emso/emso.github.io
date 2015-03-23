@@ -1,102 +1,129 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=800px" http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
- <script>
+
+<html>
+<head>
+    <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript">
+</script>
+    <script type="text/javascript">
 /*Hides all in list*/
-$(document).ready(function () {
+    $(document).ready(function () {
     $('.results > li').hide();
-//
+    //
     $('div.tags').find('input:checkbox').live('click', function () {
         $('.results > li').hide();
         $('div.tags').find('input:checked').each(function () {
             $('.results > li.' + $(this).attr('rel')).show();
         });
     });
-});  
- </script>
-
-<style>
-ul {
+    });  
+    </script>
+    <style type="text/css">
+	ul {
     list-style-type: none; /*No dots on list*/
     }
 
-.fotboll-div { /*Block for fotboll*/
-width: 90%;
-height: 300px;
-padding: 10px;
-border: 5px;
-border-style: solid;
-border-color: #FCC000;
-border-radius: 2px;
-background-color: #FCC000;
-margin: auto;
-margin-bottom: 10px; 
-display: block;
-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-position: relative;
+    .fotboll-div { /*Block for fotboll*/
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #FCC000;
+    border-radius: 2px;
+    background-color: #FCC000;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
 
-}
+    }
+    
+	.laliga-div { /*Block for fotboll*/
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #FCC000;
+    border-radius: 2px;
+    background-color: #FCC000;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
+
+    }
 
 
-.hockey-div { /*Block for hockey*/
-width: 90%;
-height: 300px;
-padding: 10px;
-border: 5px;
-border-style: solid;
-border-color: #00DFCC;
-border-radius: 2px;
-background-color: #00DFCC;
-margin: auto;
-margin-bottom: 10px; 
-display: block;
-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    .hockey-div { /*Block for hockey*/
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #00DFCC;
+    border-radius: 2px;
+    background-color: #00DFCC;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 
-}
+    }
 
-* {
+    * {
     -webkit-padding-start: 0px;
     -webkit-margin-after: 0px;
-}
+    }
 
-.basket-div { /*Block for basket*/
-width: 90%;
-height: 300px;
-padding: 10px;
-border: 5px;
-border-style: solid;
-border-color: #FF3230;
-border-radius: 2px;
-background-color: #FF3230;
-margin: auto;
-margin-bottom: 10px;
-display: block;
-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    .basket-div { /*Block for basket*/
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #FF3230;
+    border-radius: 2px;
+    background-color: #FF3230;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 
-}
+    }
 
-/*Text color*/
-body{
+    /*Text color*/
+    body{
     background-color: #f7f6f5;
     }
 
-h1{
+    h1{
     color: red;
     font-size: 75px;
     font-family: Georgia; 
     font-style: italic;
     }
-h2{
+    
+    h2{
     font-size: 50px;
     color: white;
+    float: left;
+    margin-left: -7px;
     }
-title{
+   
+    title{
     color: black;
     }
-label{
+   
+    label{
     color: black;
     }
-p{ /*Changes the position of p*/
+   
+    p{
+	/*Changes the position of p*/
     font-size: 26px;
     float: left;
     margin-top: 100px;
@@ -104,677 +131,881 @@ p{ /*Changes the position of p*/
 
 
 
-/*FIRST MENU*/
-input[type=checkbox].css-checkbox {
-							z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:0px; padding:0; border:0; 
-						}
+    /*FIRST MENU*/
+    input[type=checkbox].css-checkbox {
+         z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:0px; padding:0; border:0; 
+                        }
 
-						input[type=checkbox].css-checkbox + label.css-label {
-							/*padding-left:24px;*/
-							height:19px; 
-							display:block;
-							/*line-height:19px;*/
-							background-repeat:no-repeat;
-							background-position: 0 0;
-							font-size:19px;
-							vertical-align:middle;
-							cursor:pointer;
-						}
+                        input[type=checkbox].css-checkbox + label.css-label {
+                            /*padding-left:24px;*/
+                            height:19px; 
+                            display:block;
+                            /*line-height:19px;*/
+                            background-repeat:no-repeat;
+                            background-position: 0 0;
+                            font-size:19px;
+                            vertical-align:middle;
+                            cursor:pointer;
+                        }
 
-						input[type=checkbox].css-checkbox:checked + label.css-label {
-							background-position: 0 -19px;
-						}
-						label.css-label {
-				background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_01d3f4a899d3ddc2fd09ae59b2e7136a.png);
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}
-			
-/*  KLASSEN FÖR FILTER BILDERNA  */
+                        input[type=checkbox].css-checkbox:checked + label.css-label {
+                            background-position: 0 -19px;
+                        }
+                        label.css-label {
+                background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_01d3f4a899d3ddc2fd09ae59b2e7136a.png);
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+    /*  KLASSEN FÖR FILTER BILDERNA  */
 
-.fotboll {
+    .fotboll {
     content: url('Fotboll-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.fotboll:checked {
+    }
+    .fotboll:checked {
     content: url('Fotboll-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
+
+    }
+	.fotboll-filter {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -7px;
+    }
+
+    .mma-filter {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -7px;
+    }
     
-}
-
-.fotboll-filter {
+    .hockey-filter {
     width: 100%;
     height: 100%;
     margin-bottom: -7px;
-}
+    }
 
-.mma-filter {
-    width: 100%;
-    height: 100%;
-    margin-bottom: -7px;
-}
-
-.fotboll-mera {
+    /*.fotboll-mera {
     color:blue;
     width: 100%;
     height: 83%;
     margin-bottom: -7px;
-}
+    }
+	*/
 
-
-.hockey {
+    .hockey {
     content: url('Hockey-Non.png');
      width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.hockey:checked {
+    }
+    .hockey:checked {
     content: url('Hockey-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.hockey-mer {
+    }
+    .hockey-mer {
     content: url('Hockey-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
+    }
 
-.vinter {
+    .vinter {
     content: url('Vinter-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.vinter:checked {
+    }
+    .vinter:checked {
     content: url('Vinter-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.vinter-mer {
+    }
+    .vinter-mer {
     content: url('Vinter-Non.png');
     width: 100%;
     height: 17%;
     margin:0;
     margin-bottom: -7px;
-}
+    }
 
-.handboll {
+    .handboll {
     content: url('Handboll-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.handboll:checked {
+    }
+    .handboll:checked {
     content: url('Handboll-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.handboll-mer {
+    }
+    .handboll-mer {
     content: url('Handboll-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
+    }
 
-.mma {
+    .mma {
     content: url('Mma-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.mma:checked {
+    }
+    .mma:checked {
     content: url('Mma-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
-.mma-mer {
+    }
+    .mma-mer {
     content: url('Mma-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -7px;
-}
+    }
 
-.native-hidden {
+    .native-hidden {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 
-}
+    }
 
-.block-div { /*Block for fotboll*/
-width: 90%;
-height: 300px;
-padding: 10px;
-border: 5px;
-border-style: solid;
-border-color: #FCC000;
-border-radius: 2px;
-background-color: #FCC000;
-margin: auto;
-margin-bottom: 10px; 
-display: block;
-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-position: relative;
+	/*Block for fotboll*/
+    .block-div {
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #FCC000;
+    border-radius: 2px;
+    background-color: #FCC000;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
 
-}
+    }
 
 
-.wrap{
- width: 100%;
- height: 10%;
- float: left;
- display: block;    
- margin: auto;    
-}
+    .wrap{
+    width: 100%;
+    height: 10%;
+    float: left;
+    display: block;    
+    margin: auto;    
+    }
 
-.box{
- width: 100%;
- height: 12%;
- display: block;
+    .box{
+    width: 100%;
+    height: 12%;
+    display: block;
 
-}
+    }
 
-.left{
+    .left{
     float: left;
     background: white;
 
-}
+    }
 
-.right{
-	float: right;
+    .right{
+    float: right;
     background: #48A0DC;
-}
+    }
 
 
 
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	vertical-align: middle;
-}
+    /*  SECTIONS  */
+    .section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    vertical-align: middle;
+    }
 
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	border-width: 0px;
-	margin-bottom: -2px;
-	display: inline-block;
-	width: 100%;
-}
-.col:first-child { margin-left: 0;}
+    /*  COLUMN SETUP  */
+    .col {
+    display: block;
+    float:left;
+    border-width: 0px;
+    margin-bottom: -2px;
+    display: inline-block;
+    width: 100%;
+    }
+    .col:first-child { margin-left: 0;}
 
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-/*  GRID OF TWO  */
-.span_2_of_2 {
-	width: 50%;
-	height: 18%;
-}
-.span_1_of_2 {
-	width: 50%;
-	height: 18%;
-}
+    /*  GROUPING  */
+    .group:before,
+    .group:after { content:""; display:table; }
+    .group:after { clear:both;}
+    .group { zoom:1; /* For IE 6/7 */ }
+    /*  GRID OF TWO  */
+    .span_2_of_2 {
+    width: 50%;
+    height: 18%;
+    }
+    .span_1_of_2 {
+    width: 50%;
+    height: 18%;
+    }
 
 
-/* HERE STARTS FOTBOLLS FILTER */
+    /* HERE STARTS FOTBOLLS FILTER */
 
-.champions {
+    .champions {
     content: url('fotboll/Champions-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
 
-}
-.champions:checked {
+    }
+    .champions:checked {
     content: url('fotboll/Champions-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
-}
-.europa {
+    }
+    .europa {
     content: url('fotboll/Europa-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
-	margin-left: inherit;    
-}
-.europa:checked {
+    margin-left: inherit;    
+    }
+    .europa:checked {
     content: url('fotboll/Europa-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.premier {
+    }
+    .premier {
     content: url('fotboll/Premier-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
-	margin-left: auto;
-}
-.premier:checked {
+    margin-left: auto;
+    }
+    .premier:checked {
     content: url('fotboll/Premier-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
-}
-.laliga {
+    }
+    .laliga {
     content: url('fotboll/LaLiga-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.laliga:checked {
+    }
+    .laliga:checked {
     content: url('fotboll/LaLiga-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.seriea {
+    }
+    .seriea {
     content: url('fotboll/Seriea-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
-	margin-left: auto;
-}
-.seriea:checked {
+    margin-left: auto;
+    }
+    .seriea:checked {
     content: url('fotboll/Seriea-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
-}
-.bundes {
+    }
+    .bundes {
     content: url('fotboll/Bundes-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.bundes:checked {
+    }
+    .bundes:checked {
     content: url('fotboll/Bundes-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.ligue1 {
+    }
+    .ligue1 {
     content: url('fotboll/Ligue1-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
-	margin-left: auto;
-}
-.ligue1:checked {
+    margin-left: auto;
+    }
+    .ligue1:checked {
     content: url('fotboll/Ligue1-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
     margin-left: auto;
-}
-.allsvenskan {
+    }
+    .allsvenskan {
     content: url('fotboll/Allsvenskan-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
     margin-left: inherit;
-}
-.allsvenskan:checked {
+    }
+    .allsvenskan:checked {
     content: url('fotboll/Allsvenskan-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
     margin-left: inherit;
-}
+    }
 
-/* HERE STARTS MMA FILTER */
+    /* HERE STARTS MMA FILTER */
 
-.ufc {
+    .ufc {
     content: url('mma/Ufc-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
 
-}
-.ufc:checked {
+    }
+    .ufc:checked {
     content: url('mma/Ufc-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
-}
-.bellator {
+    }
+    .bellator {
     content: url('mma/Bellator-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
-	margin-left: inherit;    
-}
-.bellator:checked {
+    margin-left: inherit;    
+    }
+    .bellator:checked {
     content: url('mma/Bellator-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.wsof {
+    }
+    .wsof {
     content: url('mma/Wsof-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
-	margin-left: auto;
-}
-.wsof:checked {
+    margin-left: auto;
+    }
+    .wsof:checked {
     content: url('mma/Wsof-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
-}
-.one {
+    }
+    .one {
     content: url('mma/One-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.one:checked {
+    }
+    .one:checked {
     content: url('mma/One-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.invicta {
+    }
+    .invicta {
     content: url('mma/Invicta-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
-	margin-left: auto;
-}
-.invicta:checked {
+    margin-left: auto;
+    }
+    .invicta:checked {
     content: url('mma/Invicta-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: auto;
-}
-.mfc {
+    }
+    .mfc {
     content: url('mma/Mfc-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.mfc:checked {
+    }
+    .mfc:checked {
     content: url('mma/Mfc-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -6px;
     margin-left: inherit;
-}
-.legacy {
+    }
+    .legacy {
     content: url('mma/Legacy-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
-	margin-left: auto;
-}
-.legacy:checked {
+    margin-left: auto;
+    }
+    .legacy:checked {
     content: url('mma/Legacy-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
     margin-left: auto;
-}
-.king {
+    }
+    .king {
     content: url('mma/King-Non.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
     margin-left: inherit;
-}
-.king:checked {
+    }
+    .king:checked {
     content: url('mma/King-Act.png');
     width: 100%;
     height: 17%;
     margin-bottom: -2px;
     margin-left: inherit;
-}
+    }
+    
+        /* HERE STARTS HOCKEY FILTER */
+
+    .boston {
+    content: url('hockey/Boston-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+
+    }
+    .boston:checked {
+    content: url('hockey/Boston-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .montreal {
+    content: url('hockey/Montreal-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;    
+    }
+    .montreal:checked {
+    content: url('hockey/Montreal-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .newyork {
+    content: url('hockey/NewYork-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .newyork:checked {
+    content: url('hockey/NewYork-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .toronto {
+    content: url('hockey/Toronto-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .toronto:checked {
+    content: url('hockey/Toronto-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .chicago {
+    content: url('hockey/Chicago-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .chicago:checked {
+    content: url('hockey/Chicago-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .flyers {
+    content: url('hockey/Flyers-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .flyers:checked {
+    content: url('hockey/Flyers-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .flames {
+    content: url('hockey/Flames-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: auto;
+    }
+    .flames:checked {
+    content: url('hockey/Flames-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: auto;
+    }
+    .sharks {
+    content: url('hockey/Sharks-Non.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: inherit;
+    }
+    .sharks:checked {
+    content: url('hockey/Sharks-Act.png');
+    width: 100%;
+    height: 17%;
+    margin-bottom: -2px;
+    margin-left: inherit;
+    }
 
 
-</style>
 
+    </style>
 
-<html>
-    <head>
-  <title>SPORT-Expressen</title>
-    </head>
-<center>
+    <title>SPORT-Expressen</title>
+</head>
+
 <body>
+    <center>
+        <!-- FÖRSTA FILTRENINGS FASEN-->
+        <!--La till *.-mer css klasser för att fin filtrera vidare, bara fotboll är igång här under-->
 
-<!-- FÖRSTA FILTRENINGS FASEN-->
-<!--La till *.-mer css klasser för att fin filtrera vidare, bara fotboll är igång här under-->
-<div class="native-hidden tags" id="checkbutton">
-<input class="native-hidden fotboll tags" type="checkbox" rel="fotboll-filter"/>
-<input class="native-hidden hockey" type="checkbox" rel="hockey-mer"/>
-<input class="native-hidden vinter" type="checkbox" rel="vinter"/>
-<input class="native-hidden handboll" type="checkbox" rel="handboll"/>
-<input class="native-hidden mma" type="checkbox" rel="mma-filter"/>
-</div>
-
-
-
-<!-- HÄR BÖRJAR FOTBOLLS FILTRERINGEN -->
-<div>
-<ul class="results">
-    <li class="fotboll-filter" >
-    <div class="tags" id="checkbutton">
-
- <div style="margin-bottom: -10px;" align="center">  <img src="Fotboll-Non.png"/ height="17%" width="100%"> 
-</div> 
-
-<!-- HÄR BÖRJAR KNAPPARNA FÖR FOTBOLL -->
-<!-- Champions and Europa -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden champions tags" type="checkbox" rel="champions-div"/>
-	</div>
-	<div class="col span_2_of_2">
-	<input class="native-hidden europa tags" type="checkbox" rel="europa-div"/>
-	</div>
-</div>
-
-<!-- Premier and La Liga -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden premier tags" type="checkbox" rel="premier-div"/>
-	</div>
-	<div class="col span_1_of_2">
-	<input class="native-hidden laliga tags" type="checkbox" rel="laliga-div"/>
-	</div>
-</div>
-
-<!-- Serie A and Bundes -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden seriea tags" type="checkbox" rel="seriea-div"/>
-	</div>
-	<div class="col span_1_of_2">
-	<input class="native-hidden bundes tags" type="checkbox" rel="bundes-div"/>
-	</div>
-</div>
-
-<!-- Ligue 1 and Allsvenskan -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden ligue1 tags" type="checkbox" rel="ligue1-div"/>
-	</div>
-	<div class="col span_1_of_2">
-	<input class="native-hidden allsvenskan tags" type="checkbox" rel="allsvenskan-div"/>
-	</div>
-</div>
-
-<!-- Back and Next -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<img src="Fotboll/backbutton.png" height="10%" width="100%">
-	</div>
-	<div class="col span_1_of_2">
-	<img src="Fotboll/nextbutton.png" height="10%" width="100%">	
-	</div>
-</div>
-
-<!-- Glömt stänga en massa, funkar nu, men kan krångla-->
-    </div></li></ul></div>
-    
-    
-    <!-- HÄR BÖRJAR MMA FILTRERINGEN -->
-<div>
-<ul class="results">
-    <li class="mma-filter" >
-    <div class="tags" id="checkbutton">
-
- <div style="margin-bottom: -10px;" align="center">  <img src="Mma-Non.png"/ height="17%" width="100%"> 
-</div> 
-
-<!-- HÄR BÖRJAR KNAPPARNA FÖR FOTBOLL -->
-<!-- UFC and Bellator -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden ufc tags" type="checkbox" rel="ufc-div"/>
-	</div>
-	<div class="col span_2_of_2">
-	<input class="native-hidden bellator tags" type="checkbox" rel="bellator-div"/>
-	</div>
-</div>
-
-<!-- WSOF and One FC -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden wsof tags" type="checkbox" rel="wsof-div"/>
-	</div>
-	<div class="col span_1_of_2">
-	<input class="native-hidden one tags" type="checkbox" rel="one-div"/>
-	</div>
-</div>
-
-<!-- Invcita and MFC -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden invicta tags" type="checkbox" rel="invicta-div"/>
-	</div>
-	<div class="col span_1_of_2">
-	<input class="native-hidden mfc tags" type="checkbox" rel="mfc-div"/>
-	</div>
-</div>
-
-<!-- Legacy 1 and King of the Cage -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<input class="native-hidden legacy tags" type="checkbox" rel="legacy-div"/>
-	</div>
-	<div class="col span_1_of_2">
-	<input class="native-hidden king tags" type="checkbox" rel="king-div"/>
-	</div>
-</div>
-
-<!-- Back and Next -->
-<div class="section group">
-	<div class="col span_1_of_2">
-	<img src="Fotboll/backbutton.png" height="10%" width="100%">
-	</div>
-	<div class="col span_1_of_2">
-	<img src="Fotboll/nextbutton.png" height="10%" width="100%">	
-	</div>
-</div>
-    </div></li></ul></div></div></li></ul></div>
-<!-- HÄR KOMMER ARTIKLARNA FRAM -->
-<!--Här funkar checkboxarna med displayblock artiklarna, rör ej tills vi kommer hit.-->
-<!-- HÄR TAR VI PAUS
-<h1>SPORT-Expressen</h1>
-<div class="tags" id="checkbutton">
-<label>
-    <input type="checkbox" rel="all">
-        <span>All</span>
-    </input>
-</label>
-<label>
-    <input type="checkbox" rel="fotboll-div">
-        <span>Fotboll</span>
-    </input>
-</label>
-<label>
-    <input type="checkbox" rel="hockey-div">
-        <span>Hockey</span>
-    </input>
-</label>
-<label>
-    <input type="checkbox" rel="basket-div">
-        <span>Basket</span>
-    </input>
-</label>
-</div>
-</center>
--->
- <ul class="results">
-    <li class="hockey-div all" position="center" >
-        <h2>Röd Natt</h2>
-        <p>Tre Kronor smäller i Ryssland</p>
-    </li> 
-
-    <li class="fotboll-div all">
-        <h2>Zlatan gör mål</h2>
-        <p>Zlatan har gjor det igen.</p>
-    </li>
-
-
-    <li class="basket-div all">
-        <h2>Space Jam</h2>
-        <p>Michael Jordan ska med till Mars</p>
-    </li>
-
-    <li class="fotboll-div all">
-        <h2>Zlatan är GUD</h2>
-        <p>Ännu en spektakulär klack mål från vår Zlatan.</p>
-    </li>
+        <div class="native-hidden tags" id="checkbutton">
+            <input class="native-hidden fotboll tags" type="checkbox" rel="fotboll-filter"> 
+            <input class="native-hidden hockey" type="checkbox" rel="hockey-filter"> 
+            <input class="native-hidden vinter" type="checkbox" rel="vinter"> 
+            <input class="native-hidden handboll" type="checkbox" rel="handboll"> 
+            <input class="native-hidden mma" type="checkbox" rel="mma-filter">
+        </div>
         
-    <li class="laliga-div all">
-        <h2>Vroom vroom</h2>
-        <p>Zlatan köper två bilar</p>
-    </li>
+        <!-- HÄR BÖRJAR FOTBOLLS FILTRERINGEN -->
+        <div>
+            <ul class="results">
+                <li class="fotboll-filter">
+                    <div class="tags" id="checkbutton">
+                        <div style="margin-bottom: -10px;" align="center">
+	                        <img src="Fotboll-Non.png" height="17%" width="100%">
+	                    </div>
+	                    
+	                    <!-- HÄR BÖRJAR KNAPPARNA FÖR FOTBOLL -->
+                        <!-- Champions and Europa -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden champions tags" type="checkbox" rel="champions-div">
+                            </div>
+
+                            <div class="col span_2_of_2">
+                                <input class="native-hidden europa tags" type="checkbox" rel="europa-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Premier and La Liga -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden premier tags" type="checkbox" rel="premier-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden laliga tags" type="checkbox" rel="laliga-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Serie A and Bundes -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden seriea tags" type="checkbox" rel="seriea-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden bundes tags" type="checkbox" rel="bundes-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Ligue 1 and Allsvenskan -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden ligue1 tags" type="checkbox" rel="ligue1-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden allsvenskan tags" type="checkbox" rel="allsvenskan-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Back and Next -->
+						<div class="section group">
+                            <div class="col span_1_of_2"><img src="Fotboll/backbutton.png" height="10%" width="100%"></div>
+
+                            <div class="col span_1_of_2"><img src="Fotboll/nextbutton.png" height="10%" width="100%"></div>
+                        </div>
+                        
+                        <!-- Glömt stänga en massa, funkar nu, men kan krångla-->
+                    </div>
+                </li>
+            </ul>
+        </div>
         
-    <li class="fotboll-div hockey-div all">
-        <h2>Zlatan ska börja med Hockey</h2>
-        <p>Ska till New York Rangers 2040</p>
-    </li>
-    </ul>
+        <!-- HÄR BÖRJAR MMA FILTRERINGEN -->
+
+        <div>
+            <ul class="results">
+                <li class="mma-filter">
+                    <div class="tags" id="checkbutton">
+                        <div style="margin-bottom: -10px;" align="center">
+	                        <img src="Mma-Non.png" height="17%" width="100%">
+	                    </div>
+	                    
+	                    <!-- HÄR BÖRJAR KNAPPARNA FÖR MMA -->
+
+                        <!-- UFC and Bellator -->
+                        <div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden ufc tags" type="checkbox" rel="ufc-div">
+                            </div>
+
+                            <div class="col span_2_of_2">
+                                <input class="native-hidden bellator tags" type="checkbox" rel="bellator-div">
+                            </div>
+                        </div>
+                        
+                        <!-- WSOF and One FC -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden wsof tags" type="checkbox" rel="wsof-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden one tags" type="checkbox" rel="one-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Invcita and MFC -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden invicta tags" type="checkbox" rel="invicta-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden mfc tags" type="checkbox" rel="mfc-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Legacy 1 and King of the Cage -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden legacy tags" type="checkbox" rel="legacy-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden king tags" type="checkbox" rel="king-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Back and Next -->
+						<div class="section group">
+                            <div class="col span_1_of_2"><img src="Fotboll/backbutton.png" height="10%" width="100%"></div>
+
+                            <div class="col span_1_of_2"><img src="Fotboll/nextbutton.png" height="10%" width="100%"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- HÄR BÖRJAR HOCKEY FILTRERINGEN -->
+
+        <div>
+            <ul class="results">
+                <li class="hockey-filter">
+                    <div class="tags" id="checkbutton">
+                        <div style="margin-bottom: -10px;" align="center">
+	                        <img src="Hockey-Non.png" height="17%" width="100%">
+	                    </div>
+	                    
+	                    <!-- HÄR BÖRJAR KNAPPARNA FÖR HOCKEY -->
+
+                        <!-- Boston and Montreal -->
+                        <div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden boston tags" type="checkbox" rel="boston-div">
+                            </div>
+
+                            <div class="col span_2_of_2">
+                                <input class="native-hidden montreal tags" type="checkbox" rel="montreal-div">
+                            </div>
+                        </div>
+                        
+                        <!-- New York Rangers and Toronto -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden newyork tags" type="checkbox" rel="newyork-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden toronto tags" type="checkbox" rel="toronto-div">
+                            </div>
+                        </div>
+                        
+                        <!-- chicago and flyers -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden chicago tags" type="checkbox" rel="chicago-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden flyers tags" type="checkbox" rel="flyers-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Calgary Flames and San Jose Sharks -->
+						<div class="section group">
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden flames tags" type="checkbox" rel="flames-div">
+                            </div>
+
+                            <div class="col span_1_of_2">
+                                <input class="native-hidden sharks tags" type="checkbox" rel="sharks-div">
+                            </div>
+                        </div>
+                        
+                        <!-- Back and Next -->
+						<div class="section group">
+                            <div class="col span_1_of_2"><img src="Fotboll/backbutton.png" height="10%" width="100%"></div>
+
+                            <div class="col span_1_of_2"><img src="Fotboll/nextbutton.png" height="10%" width="100%"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        
+        <!-- HÄR KOMMER ARTIKLARNA FRAM -->
+        <!--Här funkar checkboxarna med displayblock artiklarna, rör ej tills vi kommer hit.-->
+        <!-- HÄR TAR VI PAUS
+			<h1>SPORT-Expressen</h1>
+				<div class="tags" id="checkbutton">
+					<label>
+						<input type="checkbox" rel="all">
+						<span>All</span>
+						</input>
+					</label>
+					<label>
+						<input type="checkbox" rel="fotboll-div">
+						<span>Fotboll</span>
+						</input>
+					</label>
+					<label>
+						<input type="checkbox" rel="hockey-div">
+						<span>Hockey</span>
+						</input>
+					</label>
+					<label>
+						<input type="checkbox" rel="basket-div">
+						<span>Basket</span>
+						</input>
+					</label>
+				</div>
+			</center>
+		HÄR SLUTAR PAUSET-->
+
+        <ul class="results">
+            <li class="hockey-div all" position="center">
+                <h2>Röd Natt</h2>
+
+                <p>Tre Kronor smäller i Ryssland</p>
+            </li>
+
+            <li class="fotboll-div all">
+                <h2>Zlatan gör mål</h2>
+
+                <p>Zlatan har gjor det igen.</p>
+            </li>
+
+            <li class="basket-div all">
+                <h2>Space Jam</h2>
+
+                <p>Michael Jordan ska med till Mars</p>
+            </li>
+
+            <li class="fotboll-div all">
+                <h2>Zlatan är GUD</h2>
+
+                <p>Ännu en spektakulär klack mål från vår Zlatan.</p>
+            </li>
+
+            <li class="laliga-div all">
+                <h2>Vroom vroom</h2>
+
+                <p>Zlatan köper två bilar</p>
+            </li>
+
+            <li class="fotboll-div hockey-div all">
+                <h2>Zlatan ska börja med Hockey</h2>
+
+                <p>Ska till New York Rangers 2040</p>
+            </li>
+        </ul>
+    </center>
 </body>
 </html>
