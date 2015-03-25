@@ -1,0 +1,674 @@
+	ul {
+    list-style-type: none; /*No dots on list*/
+    }
+
+    .fotboll-div { /*Block for fotboll*/
+    width: 90%;
+    height: 300px;
+    padding: 0;
+    border: 5px;
+    border-style: solid;
+    border-color: #FCC000;
+    border-radius: 2px;
+    background-color: #FCC000;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
+
+    }
+    
+	.laliga-div { /*Block for fotboll*/
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #FCC000;
+    border-radius: 2px;
+    background-color: #FCC000;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
+
+    }
+
+
+    .hockey-div { /*Block for hockey*/
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #00DFCC;
+    border-radius: 2px;
+    background-color: #00DFCC;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+
+    }
+
+    * {
+    -webkit-padding-start: 0px;
+    -webkit-margin-after: 0px;
+    }
+
+    .basket-div { /*Block for basket*/
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #FF3230;
+    border-radius: 2px;
+    background-color: #FF3230;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+
+    }
+
+    /*Text color*/
+    body{
+    margin: 0px;
+    }
+
+    h1{
+    color: red;
+    font-size: 75px;
+    font-family: Georgia; 
+    font-style: italic;
+    }
+    
+    h2{
+    font-size: 50px;
+    color: white;
+    float: left;
+    margin-left: -7px;
+    }
+   
+    title{
+    color: black;
+    }
+   
+    label{
+    color: black;
+    }
+   
+    p{
+	/*Changes the position of p*/
+    font-size: 26px;
+    float: left;
+    margin-top: 100px;
+    }
+
+
+
+    /*FIRST MENU*//*
+    input[type=checkbox].css-checkbox {
+         z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:0px; padding:0; border:0; 
+                        }
+
+                        input[type=checkbox].css-checkbox + label.css-label {
+                           
+                            height:19px; 
+                            display:block;
+                          
+                            background-repeat:no-repeat;
+                            background-position: 0 0;
+                            font-size:19px;
+                            vertical-align:middle;
+                            cursor:pointer;
+                        }
+
+                        input[type=checkbox].css-checkbox:checked + label.css-label {
+                            background-position: 0 -19px;
+                        }
+                        label.css-label {
+                background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_01d3f4a899d3ddc2fd09ae59b2e7136a.png);
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }*/
+            
+    /*  KLASSEN FÖR FILTER BILDERNA  */
+
+    .fotboll {
+    content: url(filter/Fotboll-Non.png);
+    width: 100%;
+    height: 16%;
+    }
+    .fotboll:checked {
+    content: url('filter/Fotboll-Act.png');
+    width: 100%;
+    height: 16%;
+
+    }
+	.fotboll-filter {
+    width: 100%;
+    height: 100%;
+    }
+
+    .mma-filter {
+    width: 100%;
+    height: 100%;
+    }
+    
+    .hockey-filter {
+    width: 100%;
+    height: 100%;
+    }
+
+    .hockey {
+    content: url('filter/Hockey-Non.png');
+    width: 100%;
+    height: 16%;
+    }
+    .hockey:checked {
+    content: url('filter/Hockey-Act.png');
+    width: 100%;
+    height: 16%;
+    }
+    .hockey-mer {
+    content: url('filter/Hockey-Non.png');
+    width: 100%;
+    height: 16%;
+    }
+
+    .vinter {
+    content: url('filter/Vinter-Non.png');
+    width: 100%;
+    height: 16%;
+    }
+    .vinter:checked {
+    content: url('filter/Vinter-Act.png');
+    width: 100%;
+    height: 16%;
+    }
+    .vinter-mer {
+    content: url('filter/Vinter-Non.png');
+    width: 100%;
+    height: 16%;
+    margin:0;
+    }
+
+    .handboll {
+    content: url('filter/Handboll-Non.png');
+    width: 100%;
+    height: 16%;
+    }
+    .handboll:checked {
+    content: url('filter/Handboll-Act.png');
+    width: 100%;
+    height: 16%;
+    }
+    .handboll-mer {
+    content: url('filter/Handboll-Non.png');
+    width: 100%;
+    height: 16%;
+    }
+
+    .mma {
+    content: url('filter/Mma-Non.png');
+    width: 100%;
+    height: 16%;
+    }
+    .mma:checked {
+    content: url('filter/Mma-Act.png');
+    width: 100%;
+    height: 16%;
+    }
+    .mma-mer {
+    content: url('filter/Mma-Non.png');
+    width: 100%;
+    height: 17%;
+    }
+
+    .native-hidden {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+
+    }
+
+	/*Block for fotboll*/
+    .block-div {
+    width: 90%;
+    height: 300px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    border-color: #FCC000;
+    border-radius: 2px;
+    background-color: #FCC000;
+    margin: auto;
+    margin-bottom: 10px; 
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
+
+    }
+
+
+    .wrap{
+    width: 100%;
+    height: 10%;
+    float: left;
+    display: block;    
+    margin: auto;    
+    }
+
+    .box{
+    width: 100%;
+    height: 12%;
+    display: block;
+
+    }
+
+    .left{
+    float: left;
+    background: white;
+
+    }
+
+    .right{
+    float: right;
+    background: #48A0DC;
+    }
+
+
+
+    /*  SECTIONS  */
+    .section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    vertical-align: middle;
+    }
+
+    /*  COLUMN SETUP  */
+    .col {
+    display: block;
+    float:left;
+    border-width: 0px;
+    margin-bottom: -2px;
+    display: inline-block;
+    width: 100%;
+    }
+    .col:first-child { margin-left: 0;}
+
+    /*  GROUPING  */
+    .group:before,
+    .group:after { content:""; display:table; }
+    .group:after { clear:both;}
+    .group { zoom:1; /* For IE 6/7 */ }
+    /*  GRID OF TWO  */
+    .span_2_of_2 {
+    width: 50%;
+    height: auto;
+    }
+    .span_1_of_2 {
+    width: 50%;
+    height: 18%;
+    }
+
+
+    /* HERE STARTS FOTBOLLS FILTER */
+
+    .champions {
+    content: url('fotboll/Champions-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+
+    }
+    .champions:checked {
+    content: url('fotboll/Champions-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .europa {
+    content: url('fotboll/Europa-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;    
+    }
+    .europa:checked {
+    content: url('fotboll/Europa-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .premier {
+    content: url('fotboll/Premier-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .premier:checked {
+    content: url('fotboll/Premier-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .laliga {
+    content: url('fotboll/LaLiga-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .laliga:checked {
+    content: url('fotboll/LaLiga-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .seriea {
+    content: url('fotboll/Seriea-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .seriea:checked {
+    content: url('fotboll/Seriea-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .bundes {
+    content: url('fotboll/Bundes-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .bundes:checked {
+    content: url('fotboll/Bundes-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .ligue1 {
+    content: url('fotboll/Ligue1-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: auto;
+    }
+    .ligue1:checked {
+    content: url('fotboll/Ligue1-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: auto;
+    }
+    .allsvenskan {
+    content: url('fotboll/Allsvenskan-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: inherit;
+    }
+    .allsvenskan:checked {
+    content: url('fotboll/Allsvenskan-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: inherit;
+    }
+
+    /* HERE STARTS MMA FILTER */
+
+    .ufc {
+    content: url('Mma/UFC-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+
+    }
+    .ufc:checked {
+    content: url('Mma/UFC-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .bellator {
+    content: url('mma/Bellator-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;    
+    }
+    .bellator:checked {
+    content: url('Mma/Bellator-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .wsof {
+    content: url('Mma/Wsof-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .wsof:checked {
+    content: url('Mma/Wsof-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .one {
+    content: url('Mma/One-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .one:checked {
+    content: url('Mma/One-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .invicta {
+    content: url('Mma/Invicta-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .invicta:checked {
+    content: url('Mma/Invicta-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .mfc {
+    content: url('Mma/Mfc-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .mfc:checked {
+    content: url('Mma/Mfc-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .legacy {
+    content: url('Mma/Legacy-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -2px;
+    margin-left: auto;
+    }
+    .legacy:checked {
+    content: url('Mma/Legacy-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -2px;
+    margin-left: auto;
+    }
+    .king {
+    content: url('Mma/King-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -2px;
+    margin-left: inherit;
+    }
+    .king:checked {
+    content: url('Mma/King-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -2px;
+    margin-left: inherit;
+    }
+    
+        /* HERE STARTS HOCKEY FILTER */
+
+    .boston {
+    content: url('hockey/Boston-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+
+    }
+    .boston:checked {
+    content: url('hockey/Boston-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .montreal {
+    content: url('hockey/Montreal-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;    
+    }
+    .montreal:checked {
+    content: url('hockey/Montreal-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .newyork {
+    content: url('hockey/NewYork-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .newyork:checked {
+    content: url('hockey/NewYork-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .toronto {
+    content: url('hockey/Toronto-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .toronto:checked {
+    content: url('hockey/Toronto-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .chicago {
+    content: url('hockey/Chicago-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .chicago:checked {
+    content: url('hockey/Chicago-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: auto;
+    }
+    .flyers {
+    content: url('hockey/Flyers-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .flyers:checked {
+    content: url('hockey/Flyers-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: -6px;
+    margin-left: inherit;
+    }
+    .flames {
+    content: url('hockey/Flames-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: auto;
+    }
+    .flames:checked {
+    content: url('hockey/Flames-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: auto;
+    }
+    .sharks {
+    content: url('hockey/Sharks-Non.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: inherit;
+    }
+    .sharks:checked {
+    content: url('hockey/Sharks-Act.png');
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-left: inherit;
+    }
