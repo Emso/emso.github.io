@@ -2,41 +2,210 @@
     list-style-type: none; /*No dots on list*/
     }
 
-    .fotboll-div { /*Block for fotboll*/
+	/**BLOCKS FOR FOTBOLL**/
+	
+	/*Block for Champions*/
+	.champions-div {
     width: 90%;
-    height: 300px;
+    height: inherit;
     padding: 0;
-    border: 5px;
-    border-style: solid;
-    border-color: #FCC000;
-    border-radius: 2px;
-    background-color: #FCC000;
+    border: 1px;
+    border-style: none;
     margin: auto;
-    margin-bottom: 10px; 
+    margin-bottom: 0; 
     display: block;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     position: relative;
-
     }
     
-	.laliga-div { /*Block for fotboll*/
+    /*Block for Ligue 1*/
+	.ligue1-div { 
     width: 90%;
-    height: 300px;
-    padding: 10px;
-    border: 5px;
-    border-style: solid;
-    border-color: #FCC000;
-    border-radius: 2px;
-    background-color: #FCC000;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
     margin: auto;
-    margin-bottom: 10px; 
+    margin-bottom: 0; 
     display: block;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     position: relative;
-
+    }
+    
+    /*Block for Premier League*/
+	.premier-div { 
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
     }
 
+    /*Block for La Liga*/
+	.laliga-div { 
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    /*Block for Bundes Liga*/
+	.bundes-div { 
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    /*Block for All Svenskan*/
+	.allsvenskan-div { 
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+	/**BLOCKS FOR HOCKEY**/
+	
+	/*Block for Boston*/
+	.boston-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    /*Block for Montreal*/
+	.montreal-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+	
+	/*Block for New York Rangers*/
+	.newyork-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    /*Block for Toronto*/
+	.toronto-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    /*Block for Chicago*/
+	.chicago-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    /*Block for Flyers*/
+	.flyers-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
 
+	/**BLOCKS FOR MMA**/
+	
+	/*Block for UFC*/
+	.ufc-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+	/*Block for Bellator*/
+	.ufc-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    /*Block for WSOF*/
+	.wsof-div {
+    width: 90%;
+    height: inherit;
+    padding: 0;
+    border: 1px;
+    border-style: none;
+    margin: auto;
+    margin-bottom: 0; 
+    display: block;
+    position: relative;
+    }
+    
+    
     .hockey-div { /*Block for hockey*/
     width: 90%;
     height: 300px;
@@ -53,11 +222,11 @@
 
     }
 
-    * {
+    /* {
     -webkit-padding-start: 0px;
     -webkit-margin-after: 0px;
     }
-
+*/
     .basket-div { /*Block for basket*/
     width: 90%;
     height: 300px;
@@ -74,43 +243,10 @@
 
     }
 
-    /*Text color*/
-    body{
-    margin: 0px;
-    }
-
-    h1{
-    color: red;
-    font-size: 75px;
-    font-family: Georgia; 
-    font-style: italic;
-    }
-    
-    h2{
-    font-size: 50px;
-    color: white;
-    float: left;
-    margin-left: -7px;
-    }
-   
-    title{
-    color: black;
-    }
-   
-    label{
-    color: black;
-    }
-   
-    p{
-	/*Changes the position of p*/
-    font-size: 26px;
-    float: left;
-    margin-top: 100px;
-    }
 
 
 
-    /*FIRST MENU*//*
+    /*FIRST MENU*/
     input[type=checkbox].css-checkbox {
          z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:0px; padding:0; border:0; 
                         }
@@ -138,7 +274,7 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
-            }*/
+            }
             
     /*  KLASSEN FÖR FILTER BILDERNA  */
 
@@ -153,20 +289,7 @@
     height: 16%;
 
     }
-	.fotboll-filter {
-    width: 100%;
-    height: 100%;
-    }
 
-    .mma-filter {
-    width: 100%;
-    height: 100%;
-    }
-    
-    .hockey-filter {
-    width: 100%;
-    height: 100%;
-    }
 
     .hockey {
     content: url('filter/Hockey-Non.png');
@@ -557,7 +680,7 @@
     margin-left: inherit;
     }
     
-        /* HERE STARTS HOCKEY FILTER */
+    /* HERE STARTS HOCKEY FILTER */
 
     .boston {
     content: url('hockey/Boston-Non.png');
@@ -672,3 +795,115 @@
     margin-bottom: 0;
     margin-left: inherit;
     }
+ 
+ /** ARTICLE STYLING **/   
+ /* Basic Resetb*/
+ 
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Basics Styles */
+html {
+	font-size: 50.5%;
+}
+body {
+	background-color: #eee;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 1.6em;
+	line-height: 1.6;
+	color: #666;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #3498db;
+}
+	a:hover {
+		color: #2980b9;
+	}
+
+h2 {
+	line-height: 1.2;
+	margin-bottom: 0.30rem;
+	font-size: 1.6em;
+}
+
+h4 {
+	line-height: 1.3em;
+	margin-bottom: 0.25rem;
+	font-size: 1.18em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.wrapper {
+	max-width: 400px;
+	margin: 2px auto;
+}
+
+/* Helpers */
+.border-tlr-radius { 
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px; 
+}
+
+.text-center { text-align: center; }
+
+.radius { border-radius: 2px; }
+
+.shadowDepth1 {
+   box-shadow: 
+  		0 1px 3px rgba(0,0,0, 0.12),
+    	0 1px 3px rgba(0,0,0, 0.30);      
+}
+
+
+/* Card Styles */
+
+.card {
+	background-color: #fff;
+	margin-bottom: 1.6rem;
+}
+
+.card__padding {
+	padding: 1.6rem;
+}
+ 
+.card__image {
+	min-height: 100px;
+	background-color: #eee;
+}
+	.card__image img {
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+
+.card__content {
+	position: relative;
+}
+
+/* Card meta */
+.card__meta time {
+	font-size: 1.5rem;
+	color: #bbb;
+	margin-left: 0.8rem;
+}
+
+/* Card rticle */
+.card__article a {
+	text-decoration: none;
+	color: #444;
+}
+	.card__article a:active {
+		color: #2980b9;
+	}
