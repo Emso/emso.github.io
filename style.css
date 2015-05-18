@@ -1,909 +1,487 @@
-	ul {
-    list-style-type: none; /*No dots on list*/
-    }
+/*-----------------------------------------------------------------------------------*/
+/*	    Absolut Cube
+/*      Built with Blocs
+/*-----------------------------------------------------------------------------------*/
 
-	/**BLOCKS FOR FOTBOLL**/
-	
-	/*Block for Champions*/
-	.champions-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for Ligue 1*/
-	.ligue1-div { 
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for Premier League*/
-	.premier-div { 
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-
-    /*Block for La Liga*/
-	.laliga-div { 
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for Bundes Liga*/
-	.bundes-div { 
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for All Svenskan*/
-	.allsvenskan-div { 
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-	/**BLOCKS FOR HOCKEY**/
-	
-	/*Block for Boston*/
-	.boston-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for Montreal*/
-	.montreal-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-	
-	/*Block for New York Rangers*/
-	.newyork-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for Toronto*/
-	.toronto-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for Chicago*/
-	.chicago-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for Flyers*/
-	.flyers-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-
-	/**BLOCKS FOR MMA**/
-	
-	/*Block for UFC*/
-	.ufc-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-	/*Block for Bellator*/
-	.ufc-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    /*Block for WSOF*/
-	.wsof-div {
-    width: 90%;
-    height: inherit;
-    padding: 0;
-    border: 1px;
-    border-style: none;
-    margin: auto;
-    margin-bottom: 0; 
-    display: block;
-    position: relative;
-    }
-    
-    
-    .hockey-div { /*Block for hockey*/
-    width: 90%;
-    height: 300px;
-    padding: 10px;
-    border: 5px;
-    border-style: solid;
-    border-color: #00DFCC;
-    border-radius: 2px;
-    background-color: #00DFCC;
-    margin: auto;
-    margin-bottom: 10px; 
-    display: block;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-
-    }
-
-    /* {
-    -webkit-padding-start: 0px;
-    -webkit-margin-after: 0px;
-    }
-*/
-    .basket-div { /*Block for basket*/
-    width: 90%;
-    height: 300px;
-    padding: 10px;
-    border: 5px;
-    border-style: solid;
-    border-color: #FF3230;
-    border-radius: 2px;
-    background-color: #FF3230;
-    margin: auto;
-    margin-bottom: 10px;
-    display: block;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-
-    }
+body{
+	margin:0;
+	padding:0;
+    background:#FFF;
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+}
+a:hover{text-decoration: none; cursor:pointer;}
 
 
+   
 
 
-    /*FIRST MENU*/
-    input[type=checkbox].css-checkbox {
-         z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:0px; padding:0; border:0; 
-                        }
-
-                        input[type=checkbox].css-checkbox + label.css-label {
-                           
-                            height:19px; 
-                            display:block;
-                          
-                            background-repeat:no-repeat;
-                            background-position: 0 0;
-                            font-size:19px;
-                            vertical-align:middle;
-                            cursor:pointer;
-                        }
-
-                        input[type=checkbox].css-checkbox:checked + label.css-label {
-                            background-position: 0 -19px;
-                        }
-                        label.css-label {
-                background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_01d3f4a899d3ddc2fd09ae59b2e7136a.png);
-                -webkit-touch-callout: none;
-                -webkit-user-select: none;
-                -khtml-user-select: none;
-                -moz-user-select: none;
-                -ms-user-select: none;
-                user-select: none;
-            }
-            
-    /*  KLASSEN FÖR FILTER BILDERNA  */
-
-    .fotboll {
-    content: url(filter/Fotboll-Non.png);
-    width: 100%;
-    height: 16%;
-    }
-    .fotboll:checked {
-    content: url('filter/Fotboll-Act.png');
-    width: 100%;
-    height: 16%;
-
-    }
+/* Globals type styling */
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+	font-family:"Helvetica";
+}
 
 
-    .hockey {
-    content: url('filter/Hockey-Non.png');
-    width: 100%;
-    height: 16%;
-    }
-    .hockey:checked {
-    content: url('filter/Hockey-Act.png');
-    width: 100%;
-    height: 16%;
-    }
-    .hockey-mer {
-    content: url('filter/Hockey-Non.png');
-    width: 100%;
-    height: 16%;
-    }
+/* Site container width */
 
-    .vinter {
-    content: url('filter/Vinter-Non.png');
-    width: 100%;
-    height: 16%;
-    }
-    .vinter:checked {
-    content: url('filter/Vinter-Act.png');
-    width: 100%;
-    height: 16%;
-    }
-    .vinter-mer {
-    content: url('filter/Vinter-Non.png');
-    width: 100%;
-    height: 16%;
-    margin:0;
-    }
+.container{
+	max-width:1170px;
+}
 
-    .handboll {
-    content: url('filter/Handboll-Non.png');
-    width: 100%;
-    height: 16%;
-    }
-    .handboll:checked {
-    content: url('filter/Handboll-Act.png');
-    width: 100%;
-    height: 16%;
-    }
-    .handboll-mer {
-    content: url('filter/Handboll-Non.png');
-    width: 100%;
-    height: 16%;
-    }
+/* Blocs */
 
-    .mma {
-    content: url('filter/Mma-Non.png');
-    width: 100%;
-    height: 16%;
-    }
-    .mma:checked {
-    content: url('filter/Mma-Act.png');
-    width: 100%;
-    height: 16%;
-    }
-    .mma-mer {
-    content: url('filter/Mma-Non.png');
-    width: 100%;
-    height: 17%;
-    }
-
-    .native-hidden {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-
-    }
-
-	/*Block for fotboll*/
-    .block-div {
-    width: 90%;
-    height: 300px;
-    padding: 10px;
-    border: 5px;
-    border-style: solid;
-    border-color: #FCC000;
-    border-radius: 2px;
-    background-color: #FCC000;
-    margin: auto;
-    margin-bottom: 10px; 
-    display: block;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-    position: relative;
-
-    }
+.bloc{
+	width:100%;
+	clear:both;
+	background: 50% 50% no-repeat;
+	padding;
+	0 50px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 
-    .wrap{
-    width: 100%;
-    height: 10%;
-    float: left;
-    display: block;    
-    margin: auto;    
-    }
+/* Bloc sizes */
 
-    .box{
-    width: 100%;
-    height: 12%;
-    display: block;
-
-    }
-
-    .left{
-    float: left;
-    background: white;
-
-    }
-
-    .right{
-    float: right;
-    background: #48A0DC;
-    }
+.bloc-lg{
+	padding:100px 50px;
+}
+.bloc-sm{
+	padding:20px 50px;
+}
 
 
+/* Bloc - Background Styles */
 
-    /*  SECTIONS  */
-    .section {
-    clear: both;
-    padding: 0px;
-    margin: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    vertical-align: middle;
-    }
-
-    /*  COLUMN SETUP  */
-    .col {
-    display: block;
-    float:left;
-    border-width: 0px;
-    margin-bottom: -2px;
-    display: inline-block;
-    width: 100%;
-    }
-    .col:first-child { margin-left: 0;}
-
-    /*  GROUPING  */
-    .group:before,
-    .group:after { content:""; display:table; }
-    .group:after { clear:both;}
-    .group { zoom:1; /* For IE 6/7 */ }
-    /*  GRID OF TWO  */
-    .span_2_of_2 {
-    width: 50%;
-    height: auto;
-    }
-    .span_1_of_2 {
-    width: 50%;
-    height: 18%;
-    }
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-repeat{
+	background:repeat;
+}
 
 
-    /* HERE STARTS FOTBOLLS FILTER */
+/* Bloc - Background Effects */
 
-    .champions {
-    content: url('fotboll/Champions-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
+.b-parallax{
+	background-attachment:fixed;
+}
 
-    }
-    .champions:checked {
-    content: url('fotboll/Champions-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .europa {
-    content: url('fotboll/Europa-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;    
-    }
-    .europa:checked {
-    content: url('fotboll/Europa-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .premier {
-    content: url('fotboll/Premier-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .premier:checked {
-    content: url('fotboll/Premier-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .laliga {
-    content: url('fotboll/LaLiga-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .laliga:checked {
-    content: url('fotboll/LaLiga-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .seriea {
-    content: url('fotboll/Seriea-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .seriea:checked {
-    content: url('fotboll/Seriea-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .bundes {
-    content: url('fotboll/Bundes-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .bundes:checked {
-    content: url('fotboll/Bundes-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .ligue1 {
-    content: url('fotboll/Ligue1-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: auto;
-    }
-    .ligue1:checked {
-    content: url('fotboll/Ligue1-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: auto;
-    }
-    .allsvenskan {
-    content: url('fotboll/Allsvenskan-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: inherit;
-    }
-    .allsvenskan:checked {
-    content: url('fotboll/Allsvenskan-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: inherit;
-    }
 
-    /* HERE STARTS MMA FILTER */
+/* Bloc - Dark theme */
 
-    .ufc {
-    content: url('Mma/UFC-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
+.d-bloc{
+	color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+	color:rgba(255,255,255,.9);
+}
+.d-bloc h1, .d-bloc h2, .d-bloc h3, .d-bloc h4,.d-bloc h5, .d-bloc h6, .d-bloc .ico{
+	color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round{
+	border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+	border-color:rgba(255,255,255,.2);
+}
+.d-bloc a{
+	color:rgba(255,255,255,.6);
+}
+.d-bloc a:hover{
+	color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
 
-    }
-    .ufc:checked {
-    content: url('Mma/UFC-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .bellator {
-    content: url('mma/Bellator-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;    
-    }
-    .bellator:checked {
-    content: url('Mma/Bellator-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .wsof {
-    content: url('Mma/Wsof-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .wsof:checked {
-    content: url('Mma/Wsof-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .one {
-    content: url('Mma/One-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .one:checked {
-    content: url('Mma/One-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .invicta {
-    content: url('Mma/Invicta-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .invicta:checked {
-    content: url('Mma/Invicta-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .mfc {
-    content: url('Mma/Mfc-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .mfc:checked {
-    content: url('Mma/Mfc-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .legacy {
-    content: url('Mma/Legacy-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -2px;
-    margin-left: auto;
-    }
-    .legacy:checked {
-    content: url('Mma/Legacy-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -2px;
-    margin-left: auto;
-    }
-    .king {
-    content: url('Mma/King-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -2px;
-    margin-left: inherit;
-    }
-    .king:checked {
-    content: url('Mma/King-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -2px;
-    margin-left: inherit;
-    }
-    
-    /* HERE STARTS HOCKEY FILTER */
 
-    .boston {
-    content: url('hockey/Boston-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
+/* Bloc - Light theme */
 
-    }
-    .boston:checked {
-    content: url('hockey/Boston-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .montreal {
-    content: url('hockey/Montreal-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;    
-    }
-    .montreal:checked {
-    content: url('hockey/Montreal-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .newyork {
-    content: url('hockey/NewYork-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .newyork:checked {
-    content: url('hockey/NewYork-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .toronto {
-    content: url('hockey/Toronto-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .toronto:checked {
-    content: url('hockey/Toronto-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .chicago {
-    content: url('hockey/Chicago-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .chicago:checked {
-    content: url('hockey/Chicago-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: auto;
-    }
-    .flyers {
-    content: url('hockey/Flyers-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .flyers:checked {
-    content: url('hockey/Flyers-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: -6px;
-    margin-left: inherit;
-    }
-    .flames {
-    content: url('hockey/Flames-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: auto;
-    }
-    .flames:checked {
-    content: url('hockey/Flames-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: auto;
-    }
-    .sharks {
-    content: url('hockey/Sharks-Non.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: inherit;
-    }
-    .sharks:checked {
-    content: url('hockey/Sharks-Act.png');
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
-    margin-left: inherit;
-    }
- 
- /** ARTICLE STYLING **/   
- /* Basic Resetb*/
- 
-*,
-*:after,
-*:before {
-	margin: 0;
+.l-bloc{
+	color:rgba(0,0,0,.5);
+}
+.l-bloc button:hover{
+	color:rgba(0,0,0,.7);
+}
+.l-bloc h1,.l-bloc h2,.l-bloc h3,.l-bloc h4,.l-bloc h5, .l-bloc h6, .l-bloc .ico{
+	color:rgba(0,0,0,.7);
+}
+.l-bloc .icon-round{
+	border-color:rgba(0,0,0,.7);
+}
+.l-bloc .divider-h span{
+	border-color:rgba(0,0,0,.1);
+}
+.l-bloc a{
+	color:rgba(0,0,0,.6);
+}
+.l-bloc a:hover{
+	color:rgba(0,0,0,1);
+}
+.l-bloc .navbar-toggle .icon-bar{
+	color:rgba(0,0,0,.6);
+}
+.l-bloc .btn-wire, .l-bloc .btn-wire:hover{
+	color:rgba(0,0,0,.7);
+	border-color:rgba(0,0,0,.3);
+}
+
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
+.voffset-md{
+	margin-top:50px;
+}
+
+
+/* Custom bloc styling */
+
+#hero-bloc,#nav-bloc,#team{
+	background-color:#FFF;
+}
+#intro,#bloc-3,#bloc-5{
+	background-color:#1b1a1f;
+}
+#team h2,#team h3,#team h3,#team h3,#team h3{
+	color:#FFF;
+}
+#team{
+	color:#FFF;
+}
+#hero-bloc h1{
+	font-size:50px;
+}
+#hero-bloc h3{
+	font-size:30px;
+}
+#team h3{
+}
+
+/* Bloc image backgrounds */
+
+.bg-ffc-bokeh-poster{
+	background-image:url("img/ffc-bokeh-poster.jpg");
+}
+.bg-camera{
+	background-image:url("img/camera.jpg");
+}
+.bg-tile-d-bg{
+	background-image:url('img/tile-d-bg.png');
+}
+.bg-citysky-overlay{
+	background-image:url('img/citysky-overlay.png');
+}
+
+/* NavBar */
+
+.navbar{
+	margin-bottom: 0;
+}
+.navbar-brand{
+	height:auto;
+	padding:15px 15px;
+	font-size:25px!important;
+	font-weight:normal;
+	font-weight:600;
+}
+.navbar-brand img{
+	max-height: 200px;
+	margin: 0 5px 0 0;
+	display:inline;
+}
+.navbar-brand{
+	padding: 15px 15px;
+}
+.navbar .nav{
+	padding-top: 2px;
+	margin-right: -16px;
+	float:right;
+}
+.nav > li{
+	float:left;
+	margin-top:4px;
+	font-size:16px;
+}
+.nav > li a:hover, .nav > li a:focus{
+	background:transparent;
+}
+.navbar-toggle{
+	margin: 10px 10px 0 0;
+	border: 0px;
+}
+.navbar-toggle:hover{
+	background:transparent!important;
+}
+.navbar-toggle .icon-bar{
+	background-color: rgba(0,0,0,.5);
+	width: 26px;
+}
+ /* Inverted navbar */
+
+.nav-invert .navbar .nav{
+	float:left;
+}
+.nav-invert .navbar-header, .nav-invert .navbar-brand{
+	float:right;
+}
+@media (min-width: 768px){
+	.site-navigation{
+		position:absolute;
+		top:50%;
+		right:20px;
+		transform:translate(0, -50%);
+		-webkit-transform:translateY(-50%);
+	}
+	.nav-invert .site-navigation{
+		left:20px;
+		right:0;
+	}
+}
+/* Hero bloc */
+
+.hero{
+	padding-top:0;
+}
+.hero-nav{
+	position:absolute;
+	margin: 0 auto;
+	left:0;
+	right:0;
+}
+.v-center{
+	width:100%;
+	height: 100%;
+	display: table;
+}
+.v-center .vc-content{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.hero .btn-dwn{
+	width: 58px;
+	height: 58px;
+	line-height: 58px;
+	margin: 0 0 0 -29px;
 	padding: 0;
-	box-sizing: border-box;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 18px;
+	color: rgba(255,255,255,.8);
+	background: rgba(0,0,0,.6);
+	position: absolute;
+	left: 50%;
+	bottom: 60px;
+	border:0;
+}
+.hero .btn-dwn:hover{
+	color: rgba(255,255,255,1);
 }
 
-/* Basics Styles */
-html {
-	font-size: 50.5%;
-}
-body {
-	background-color: #eee;
-	font-family: Roboto;
-	font-weight: 400;
-	font-size: 1.6em;
-	line-height: 1.6;
-	color: #666;
-	margin: 0;
-}
+/* Bric adjustment margins */
 
-a {
-	text-decoration: none;
-	color: #3498db;
+.mg-clear{
+	margin:0;
 }
-	a:hover {
-		color: #2980b9;
-	}
-
-h2 {
-	line-height: 1.2;
-	margin-bottom: 0.30rem;
-	font-size: 1.6em;
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.mg-md{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
 }
 
-h4 {
-	line-height: 1.3em;
-	margin-bottom: 0.25rem;
-	font-size: 1.18em;
+/* Buttons */
+
+.btn{
+	margin: 0 5px 5px 0;
 }
-
-p {
-    font-size: 1.1em;
-    line-height: 1.5em;
+.btn.pull-right{
+	margin: 0 0 5px 5px;
 }
-.wrapper {
-	max-width: 400px;
-	margin: 2px auto;
-}
-
-/* Helpers */
-.border-tlr-radius { 
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px; 
-}
-
-.text-center { text-align: center; }
-
-.radius { border-radius: 2px; }
-
-.shadowDepth1 {
-   box-shadow: 
-  		0 1px 3px rgba(0,0,0, 0.12),
-    	0 1px 3px rgba(0,0,0, 0.30);      
+.btn-d,.btn-d:hover,.btn-d:focus{
+	color:#FFF!important;
+	background:rgba(0,0,0,.3);
 }
 
 
-/* Card Styles */
 
-.card {
-	background-color: #fff;
-	margin-bottom: 1.6rem;
+/* Icons */
+.icon-md{
+	font-size:30px!important;
 }
-
-.card__padding {
-	padding: 1.6rem;
+.icon-round{
+	margin:0 auto;
+	border:2px solid transparent;
+	border-radius: 50%;
+	padding: 32px 30px 26px 30px;
+	min-width:80px;
 }
- 
-.card__image {
-	min-height: 100px;
-	background-color: #eee;
+.icon-round.icon-md{
+	min-width:92px;
 }
-	.card__image img {
-		width: 100%;
-		max-width: 100%;
-		display: block;
-	}
-
-.card__content {
-	position: relative;
+.icon-round.icon-lg{
+	min-width:122px;
+}
+.icon-round.icon-xl{
+	min-width:162px;
 }
 
-/* Card meta */
-.card__meta time {
-	font-size: 1.5rem;
-	color: #bbb;
-	margin-left: 0.8rem;
+
+
+
+
+/* Empty space fillers - Used on empty blocs to fill them out */
+
+.empty-column,.empty-column.thin{
+	width:100%;
+	height:350px;
+	display:inline-block;
+}
+.empty-column{
+	height:350px;
+}
+.empty-column.thin{
+	height:150px;
+}
+/* iFrame */
+
+iframe{
+	border:0;
 }
 
-/* Card rticle */
-.card__article a {
-	text-decoration: none;
-	color: #444;
+
+
+/* Mobile adjustments */
+
+@media (max-width: 767px)
+{
+    .page-container{
+        overflow-x: hidden;
+    }
+    h1,h2,h3,h4,h5,h6,p{
+        padding-left:10px!important; 
+        padding-right:10px!important; 
+    }
+    #hero-bloc h1{
+        font-size:40px;
+    }
+    #hero-bloc h2{
+        font-size:34px;
+    }
+    #hero-bloc h3{
+        font-size:25px;
+    }
+    .bloc{
+        text-align: center;
+        padding-left: 0; 
+        padding-right: 0;
+        -webkit-background-size: auto 200%;
+        -moz-background-size: auto 200%;
+        -o-background-size: auto 200%;
+        background-size: auto 200%;
+    }
+    .b-parallax{
+        background-attachment:scroll;
+    }
+    .navbar .nav{
+        padding-top: 0;
+        border-top:1px solid rgba(0,0,0,.2);
+        float:none!important;
+    }
+    .navbar.row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .site-navigation{
+	   position:inherit;
+	   transform:none;
+	   -webkit-transform:none;
+	   -ms-transform:none;
+    }  
+    .nav > li{
+        margin-top: 0;
+        border-bottom:1px solid rgba(0,0,0,.1);
+        background:rgba(0,0,0,.05);
+        text-align: left;
+        width:100%;
+    }
+    .nav > li:hover{
+        background:rgba(0,0,0,.08);
+    }
+    #hero-bloc .navbar .nav{
+        background:rgba(0,0,0,.8);
+    }
+    #hero-bloc .navbar .nav a{
+        color:rgba(255,255,255,.6);
+    }
+    .hero-nav{
+	   left:-1px;
+	   right:-1px;
+    }
+    .navbar-collapse{
+        padding:0;
+        overflow-x: hidden;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .navbar-brand img{
+        max-height: 40px;
+        width:auto;
+        margin: -10px 10px 0 0;    
+    }
+    .nav-invert .navbar-header{
+        float: none;
+        width:100%;
+    }
+    .nav-invert .navbar-toggle{
+        float:left; 
+    }
+    .btn.pull-left, .btn.pull-right{
+       float:none!important; 
+    }
+    .bloc-group .bloc{
+         display:block;
+         width:100%;
+     }
+    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+	   padding-left: 10px;
+	   padding-right: 10px;
+    }
+    .bloc-xl,.bloc-lg{
+        padding: 40px 0;
+    }
+    .bloc-sm,.bloc-md{
+        padding-left: 0; 
+        padding-right: 0;
+    }
+    .a-block{
+        text-align: center;
+    }
+    .btn-dwn{
+       display:none; 
+    }
+    .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
-	.card__article a:active {
-		color: #2980b9;
-	}
